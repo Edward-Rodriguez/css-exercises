@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -19,7 +20,23 @@ body {
   background: white;
   width: 480px;
   border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 1.2rem;
 }
 
 .icon {
@@ -33,6 +50,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
 }
 
 .close-button {
@@ -48,12 +66,14 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex: 0 0 auto;
 }
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+  display: border-box;
 }
 
 button.continue {
@@ -66,4 +86,15 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+button.continue:hover {
+  opacity: 0.7;
+  background-color: darkblue;
+  /* border: 2px solid darkblue; */
+}
+
+button.cancel:hover {
+  opacity: 0.7;
+  /* border: 2px solid royalblue; */
 }
